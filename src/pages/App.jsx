@@ -1,7 +1,7 @@
 import React from 'react';
-
+import Layout from '../components/Layout'
 const App = () => (
-  <h1>Fundacion Patitas</h1>
+  <Layout></Layout>
 );
 
 export default App;
