@@ -1,2 +1,1 @@
-# Adopt-pets-react
-.
+# patitas.arepa.dev
