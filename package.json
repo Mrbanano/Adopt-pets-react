@@ -1,5 +1,5 @@
 {
-  "name": "patitas.arepa.dev",
+  "name": "AdoptaMascota",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gndx/patitas.arepa.dev.git"
+    "url": "https://github.com/Mrbanano/Adopt-pets-react"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gndx/patitas.arepa.dev/issues"
+    "url": "https://github.com/Mrbanano/Adopt-pets-react/issues"
   },
-  "homepage": "https://github.com/gndx/patitas.arepa.dev#readme",
+  "homepage": "https://github.com/Mrbanano/Adopt-pets-react",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
