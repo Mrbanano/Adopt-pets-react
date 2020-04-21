@@ -6,9 +6,9 @@ const Home = () =>(
         <div className="Home-container">
             <div className="Home-items">
 
-                <div className="Pet">
+                <div className="Pets">
                     <div className="Pets-cover">
-                        <span>perrito</span>
+                        <span>🐈</span>
                         <div className="Pets-type">
                             Adopcion
                         </div>
@@ -16,13 +16,15 @@ const Home = () =>(
                     <div className="Pets-content">
                         <div className="Pets-head">
                             <h2>Nombre de la mascota</h2>
-                            <i>"&</i>
+                            <i>♂️</i>
                         </div>
                         <div className="Pets-date">
                             <span>fecha</span>
                         </div>
                     </div>
                 </div>
+
+                
 
             </div>
         </div>
