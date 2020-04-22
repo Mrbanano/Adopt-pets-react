@@ -19,5 +19,5 @@ const Config = {
 
   export const {auth} = firebase;
   export const storage = firebase.storage();
-  export const databse = firebase.database();
+  export const database = firebase.database();
   export const provider = new firebase.auth.FacebookAuthProvider();
