@@ -1,5 +1,7 @@
 import firebase from 'firebase/app'
 import 'firebase/auth';
+import 'firebase/storage';
+import 'firebase/database';
 
 const Config = {
     apiKey: process.env.API_KEY,
@@ -16,4 +18,6 @@ const Config = {
   firebase.initializeApp(Config);
 
   export const {auth} = firebase;
+  export const storage = firebase.storage();
+  export const databse = firebase.database();
   export const provider = new firebase.auth.FacebookAuthProvider();

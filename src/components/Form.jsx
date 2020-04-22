@@ -1,6 +1,22 @@
 import React from "react";
+import {storage,database}from '../utils/firebase';
 
-const Form = () => (
+const Form = () => {
+
+    const onChange = event =>{
+        const file = event.target.files[0];
+        const storageRef = storage.ref();
+        const name = (+new Date())+'-'+file.name;
+        const uploadFile = storageRef.child(name).put(file);
+        uploadFile
+          .then((snapshot)=>{
+              snapshot.ref.getDownloadURL()
+                .then(donwloadURl => console.log(donwloadURl));
+          });
+    }
+
+
+    return(
     <div className="Form">
         <div className="Form-header">
             <h2>Dar en adopcion</h2>
@@ -37,12 +53,13 @@ const Form = () => (
                     <option value="false">Cuidar</option>
                 </select>
 
-                <input type="file" name="photo" />
+                <input type="file" onChange={onChange}  name="photo" />
 
                 <button>Enviar</button>
             </form>
         </div>
     </div>
-);
+)
+};
 
 export default Form;
