@@ -1,19 +1,19 @@
 import React from 'react';
 import {auth , provider} from '../utils/firebase';
 
-function Login() {
+function Login(props) {
 
     const loginFacebook = ()=>{
         auth().signInWithPopup(provider)
           .then(({ user })=>{
-            console.log(user);
+            props.history.push('/panel');
           });
     }
     
     const logoutFacebook = ()=>{
         auth().signOut()
-          .then(({})=>{
-              console.log("cerrar session");
+          .then(()=>{
+            props.history.push('/');
           });
     }
 

@@ -7,7 +7,7 @@ const Header = () => (
       <div className="Header-content">
         <div className="Header-logo">
           <Link to="/">
-            <a>🦁</a>
+            <img src="https://para-perros.online/wp-content/uploads/2018/10/dibujo-de-perro-tierno-para-pintar.jpg#main" alt="perraso"/>
           </Link>
         </div>
         <div className="Header-nav">
