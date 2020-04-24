@@ -1,13 +1,13 @@
 import React from 'react'; 
 
-function PetInfo() {
+const PetInfo = props => {
     return (
         <div class="PetInfo">
             <div className="PetInfo container">
                 <div className="PetInfo-content">
 
                     <div className="PetInfo-avatar">
-                        <img src="" alt=""/>
+                        <img src={props.pet.photo} alt= ""/>
                     </div>
                     <div className="Petinfo-profile">
                         <h2>{props.pet.name}</h2>

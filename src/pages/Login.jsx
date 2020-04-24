@@ -1,11 +1,14 @@
 import React from 'react';
+import {connect} from 'react-redux';
 import {auth , provider} from '../utils/firebase';
+import {setUSer} from '../actions/index';
 
-function Login(props) {
+const  Login = props => {
 
     const loginFacebook = ()=>{
         auth().signInWithPopup(provider)
           .then(({ user })=>{
+            props.setUser(user);
             props.history.push('/panel');
           });
     }
@@ -35,4 +38,8 @@ function Login(props) {
     )
 }
 
-export default Login;
+const mapDispatchToProps = {
+    setSer,
+}
+
+export default  connect(null,mapDispatchToProps)(Login);

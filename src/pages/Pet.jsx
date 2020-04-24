@@ -1,6 +1,11 @@
 import React from 'react';
-import PetInfo from 'react';
-function Pet() {
+import PetInfo from '../components/PetInfo';
+
+
+const Pet = props => {
+
+    const pet = props.location.state;
+
     return (
         
         <div className="Pet">

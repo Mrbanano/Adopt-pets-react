@@ -1,8 +1,10 @@
 import React from 'react';
+import {connect }from 'react-redux';
 import Form from '../components/Form'
+import {setUSer} from '../actions/';
 
 
-function Dashboard() {
+const Dashboard = props  => {
     return (
         <div className="Dashboard">
             <div className="Dashboard-container">
@@ -12,11 +14,11 @@ function Dashboard() {
                     </div>
                     <div className="Dashboard-profile">
                         <div className="Dashboard-profile-info">
-                            <img src="" alt="Foto usuario"/>
+                            <img src={props.user.photoURl} alt="Foto usuario"/>
                             <span>Nombre: </span>
-                            <h4>Alvaro Castillo Carreño</h4>
+                            <h4>{props.user.displayName}</h4>
                             <span>Correo:</span>
-                            <h4>mail@gmail.com</h4>
+                            <h4>{props.user.email}</h4>
                             <button>Cerrar seccion</button>
                         </div>
                     </div>
@@ -26,4 +28,16 @@ function Dashboard() {
     )
 }
 
-export default Dashboard;
+
+const mapDispatchToProps = {
+    setUser,
+}
+
+const mapStateToProps = state => {
+    return {
+        user:state.user
+    }
+}
+
+
+export default connect(mapStateToProps,mapDispatchToProps)(Dashboard);
