@@ -6,12 +6,13 @@ import reducer from './reducers/index';
 import App from './routes/App';
 import setUSer from './actions'
 
-const initalState ={};
-const store = createStore( reducer, initalState);
+//const initalState ={};
+//const store = createStore( reducer, initalState);
  
 ReactDOM.render(
-<Provider store={store}>
+//<Provider store={store}>
     <App />     
-</Provider>,
+//</Provider>,
+,
 document.getElementById('app')
 );
