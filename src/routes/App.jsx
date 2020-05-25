@@ -11,17 +11,17 @@ import setUSer from '../actions/index';
 import Couse from '../pages/couse'
 
 const App = () => (
- // <BrowserRouter>
-   // <Layout>
-     ///   <Switch>
-        //  <Route exact path="/"component={Home}/>
-        //  <Route exact path="/mascotas/:id"component={Pet}/>
-          //<Route exact path="/login"component={Login}/>
-         // <Route exact path="/panel"component={Dashboard}/>
-         // <Route component={NotFound}/>
-       // </Switch>
-   // </Layout>
- // </BrowserRouter>
+ <BrowserRouter>
+   <Layout>
+      <Switch>
+        <Route exact path="/"component={Home}/>
+         <Route exact path="/mascotas/:id"component={Pet}/>
+        <Route exact path="/login"component={Login}/>
+          <Route exact path="/panel"component={Dashboard}/>
+          <Route component={NotFound}/>
+        </Switch>
+   </Layout>
+  </BrowserRouter>
  <div>
     <h3>hola</h3>
     <Couse></Couse>
