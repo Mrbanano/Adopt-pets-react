@@ -10,9 +10,9 @@ import setUSer from './actions'
 //const store = createStore( reducer, initalState);
  
 ReactDOM.render(
-//<Provider store={store}>
-    <App />    
-//</Provider>,
-,
+<Provider store={store}>
+    <App /> 
+</Provider>,
+
 document.getElementById('app')
 );

@@ -19,6 +19,7 @@ const App = () => (
         <Route exact path="/login"component={Login}/>
           <Route exact path="/panel"component={Dashboard}/>
           <Route component={NotFound}/>
+          ..
         </Switch>
    </Layout>
   </BrowserRouter>
